@@ -1,0 +1,10 @@
+.travel-description {
+    text-align: justify;
+    overflow: hidden; 
+  }
+  
+  .travel-price p{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }

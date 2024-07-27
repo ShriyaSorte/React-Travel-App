@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: rgb(2, 2, 100);
+  padding: 20px;
+  color: white;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ref-btn button{
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  padding: 8px;
+}
+
+.travel-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: left;
+}
+
+.travel-card h2 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: crimson;
+}
+
+.travel-card p {
+  font-size: 14px;
+}
+
+.travel-card button {
+  background-color: rgb(2, 2, 100);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.travel-card button:hover {
+  background-color: #cc0000;
+}

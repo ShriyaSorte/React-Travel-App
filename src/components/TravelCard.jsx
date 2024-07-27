@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const TravelCard = ({ id, title, description, price, image, onDelete }) => {
   const [showMore, setShowMore] = useState(false);
@@ -12,21 +12,33 @@ const TravelCard = ({ id, title, description, price, image, onDelete }) => {
   };
 
   return (
-    <div className="travel-card">
+    <div className="travel-card bg-white">
       <h2>{title}</h2>
-      <img src={image} alt={title} style={{ width: '100%', height: '200px' }} />
+      <img src={image} alt={title} style={{ width: "100%", height: "200px" }} />
       <div className="travel-description">
         {showMore ? description : `${description.substring(0, 100)}...`}
         {showMore ? (
-          <span onClick={handleReadLess} style={{ color: 'blue', cursor: 'pointer' }}> Read less</span>
+          <span
+            onClick={handleReadLess}
+            style={{ color: "blue", cursor: "pointer" }}
+          >
+            {" "}
+            Read less
+          </span>
         ) : (
-          <span onClick={handleReadMore} style={{ color: 'blue', cursor: 'pointer' }}> Read more</span>
+          <span
+            onClick={handleReadMore}
+            style={{ color: "blue", cursor: "pointer" }}
+          >
+            {" "}
+            Read more
+          </span>
         )}
       </div>
-      <div className='travel-price'>
+      <div className="travel-price">
         <p>Price: {price}</p>
       </div>
-        <button onClick={() => onDelete(id)}>Delete</button>
+      <button onClick={() => onDelete(id)}>Delete</button>
     </div>
   );
 };

@@ -113,7 +113,7 @@ const TravelList = () => {
   };
 
   return (
-    <div>
+    <div className=" bg-gradient-to-r from-[#2980b9] to-[#2c3e50] h-full w-full">
       <div className="card-list">
         {cards.map((card) => (
           <TravelCard key={card.id} {...card} onDelete={handleDelete} />
